@@ -7,7 +7,7 @@ import {
 } from "../components/ui/tabs";
 
 function TabsLayout() {
-  const match = useMatch("/recipe1/account");
+  const match = useMatch("/recipe1/account") || "account";
   return (
     <div className="m-4">
       <Tabs defaultValue={match ? "account" : "password"} className="w-[400px]">

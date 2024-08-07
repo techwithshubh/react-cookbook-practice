@@ -5,7 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {TabsLayout, AccountTab, PasswordTab} from "./recipes/TabsLayout.tsx";
 
-const router = createBrowserRouter([
+export const routerConfig = [
   {
     path: "/",
     element: <App />,
@@ -24,7 +24,9 @@ const router = createBrowserRouter([
       }
     ]
   },
-]);
+]
+
+const router = createBrowserRouter(routerConfig);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

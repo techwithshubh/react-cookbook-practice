@@ -13,3 +13,9 @@ This repository contains code and documentation from react cookbook by by David 
 
 **Solution** - We are going to move the tabId state from the component into the current browser location.
 
+2. We use routes in React applications so that we make more of the facilities of the browser. We can bookmark pages, create deep links into an app, and go backward and forward in history.
+However, once we use routes, we make the component dependent upon something outside itself: the browser location. That might not seem like too big an issue, but it does have consequences.
+Let’s say we want to unit test a route-aware component. The error occurred because a NavLink could not find a Router higher in the compo‐
+nent tree. That means we need to wrap the component in a Router before we test it.
+
+**Solution** - React router provides Memory router. The MemoryRouter appears to the outside world just like BrowserRouter. The difference is that while the BrowserRouter is an interface to the underlying browser history API, the MemoryRouter has no such dependency. 
