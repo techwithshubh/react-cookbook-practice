@@ -4,6 +4,7 @@ import App from "./App.tsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {TabsLayout, AccountTab, PasswordTab} from "./recipes/TabsLayout.tsx";
+import Important from "./recipes/Important.tsx";
 
 export const routerConfig = [
   {
@@ -24,6 +25,10 @@ export const routerConfig = [
       }
     ]
   },
+  {
+    path: "recipe3",
+    element: <Important />
+  }
 ]
 
 const router = createBrowserRouter(routerConfig);

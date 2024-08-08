@@ -19,3 +19,7 @@ Let’s say we want to unit test a route-aware component. The error occurred bec
 nent tree. That means we need to wrap the component in a Router before we test it.
 
 **Solution** - React router provides Memory router. The MemoryRouter appears to the outside world just like BrowserRouter. The difference is that while the BrowserRouter is an interface to the underlying browser history API, the MemoryRouter has no such dependency. 
+
+3. Use Prompt for Page Exit Confirmations. What if there are several pages in the application that need the same feature? Is there a simple way to create this feature across any component that needs it?
+
+**Solution** - The react-router-dom library includes a component called **Prompt**, which asks users to confirm that they want to leave a page.
