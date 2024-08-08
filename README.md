@@ -23,3 +23,7 @@ nent tree. That means we need to wrap the component in a Router before we test i
 3. Use Prompt for Page Exit Confirmations. What if there are several pages in the application that need the same feature? Is there a simple way to create this feature across any component that needs it?
 
 **Solution** - The react-router-dom library includes a component called **Prompt**, which asks users to confirm that they want to leave a page.
+
+4. Most applications need to prevent access to particular routes until a person logs in. But how do you secure some routes and not others? Is it possible to separate the secu‐ rity mechanisms from the user interface elements for logging in and logging out? And how do you do it without writing a vast amount of code?
+
+**Solution** - React router, use context api
